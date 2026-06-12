@@ -60,6 +60,14 @@ def build_model(args):
             model.load_model(model_name_or_path=model_name_or_path)
         else:
             model.load_model()
+    elif model_type == "duvo_eye_1":
+        from models.duvo_eye_1 import DuvoEye1Model
+
+        model = DuvoEye1Model()
+        if args.model_name_or_path:
+            model.load_model(model_name_or_path=model_name_or_path)
+        else:
+            model.load_model()
 
     elif model_type == "minicpmv":
         from models.minicpmv import MiniCPMVModel
