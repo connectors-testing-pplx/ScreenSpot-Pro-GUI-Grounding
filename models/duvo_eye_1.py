@@ -46,7 +46,7 @@ PROMPT_TEMPLATE = (
     "Localize an element on the GUI image according to the provided target "
     "and output a click position.\n"
     ' * You must output a valid JSON following the format: '
-    '{"x": int 0-1000, "y": int 0-1000}\n'
+    '{{"x": int 0-1000, "y": int 0-1000}}\n'
     " Your target is:\n{instruction}"
 )
 
